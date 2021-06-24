@@ -2,25 +2,28 @@
 <html lang="en">
 
 <head>
-    <!-- arquivo mais atualizado possivel-->
-    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
-    <!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> -->
-    <!-- <meta charset="UTF-8"-->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"; &eacute> -->
+    <br><br>
+
+    <body>
+
+        <!-- ultima att 23/06 22:16 -->
+        <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+        <!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> -->
+        <!-- <meta charset="UTF-8"-->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"; &eacute> -->
 
 
+        <!--========== CAIXA DE ?CONES ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--========== CAIXA DE �CONES ==========-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!--========== FAVICOM ==========-->
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
-    <!--========== FAVICOM ==========-->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="styles.css">
 
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Portif�lio: Murilo Farias</title>
+        <title>Portifólio: Murilo Farias</title>
 </head>
 
 <body>
@@ -31,27 +34,49 @@
     </a>
 
     <!--========== HEADER ==========-->
+    <!--
     <header class="l-header" id="header">
         <nav class="nav bd-container">
             <a href="#" class="nav__logo">Murilo Farias</a>
-            <!--<p class='bx bx-moon change-theme' id="theme-button"> alterar o tema</p>-->
+            <a class="button bx bx-moon" id="theme-button"> Clique aqui para alterar o tema da pagina</a><br>
+             <p class='bx bx-moon change-theme' id="theme-button"> alterar o tema</p> -->
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Meu CV</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Experiencias Profissionais</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Projetos Em Videos</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
 
-                    <!-- <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>-->
+    <!-- novo menu -->
+    <nav class="nav">
+        <ul class="nav__menu">
+            <li class="nav__menu-item">
+                <a href="#home" style="color: #000000">
+                    <h4>| Home</h4>
+                </a>
+            </li>
+            <li class="nav__menu-item">
+                <a href="#about" style="color: #000000">
+                    <h4>| Experiencias</h4>
+                </a>
+            </li>
+            <li class="nav__menu-item">
+                <a href="#services" style="color: #000000">
+                    <h4>| Projetos </h4>
+                </a>
+
+                <ul class="nav__submenu">
+                    <li class="nav__submenu-item"> <a href="#Js" style="color: #000000">Html / JavaScript</a></li>
+                    <li class="nav__submenu-item"> <a href="#Python" style="color: #000000">Python</a></li>
+                    <li class="nav__submenu-item"> <a href="#VBA" style="color: #000000">VBA</a></li>
+                    <li class="nav__submenu-item"> <a href="#SQL" style="color: #000000">SQL</a></li>
                 </ul>
-            </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+            </li>
+
+            <li class="nav__menu-item">
+                <a href="#contact" style="color: #000000">
+                    <h4>| Contatos |</h4>
+                </a>
+
+    </nav>
+    <!-- fechando novo menu -->
+
     </header>
 
     <main class="l-main">
@@ -59,28 +84,30 @@
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
-                    <h1 class="home__title">Ol�,</h1>
-                    <h2 class="home__subtitle">Meu nome �: Murilo Farias</h2>
-                    <h2 class="home__subtitle">Sou Eng. Eletricista e atualmente estou estudando: Html, JavaScript, Python, SQL e VBA<br></h2><br>
-                    <a class="button bx bx-moon" id="theme-button"> Clique aqui para alterar o tema da pagina</a>
+                    <h1 class="home__title">Olá,</h1>
+                    <h2 class="home__subtitle">Meu nome é Murilo Farias</h2>
+                    <h2 class="home__subtitle">Sou Engenheiro Eletricista e atualmente estou estudando:</h2>
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" title="Html-Logo">
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" title="CSS-Logo">
+                    <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" title="Python-Logo">
+                    <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" title="MySql-Logo">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" title="JavaScript-Logo">
+                    <img src="https://img.shields.io/badge/VBA-1e6e42?style=for-the-badge&logo=VBA&logoColor=white" title="Vba-Logo"><br><br>
+
+
+                    <h2 class="home__subtitle">Minhas redes sociais:<br></h2>
+                    <a href="https://www.linkedin.com/in/murilo-farias-10/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" title="Linkedin-Logo"></a>
+                    <a href="https://github.com//murilofarias10/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" title="GitHub-Logo"></a>
+                    <a href="https://www.facebook.com/murilo.farias.3/" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" title="Facebook-Logo"></a>
+                    <a href="https://www.youtube.com/channel/UCgK4h8kV3RBWict0L6uzFAw" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" title="Youtube-Logo"></a>
+                    <a href="https://www.instagram.com/murilo.c.farias/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" title="Instagram-Logo"></a><br><br>
+
                 </div>
                 <img src="profile-pic.jpg" class="home__img">
             </div>
         </section>
 
-        <!--========== ABOUT ==========-->
-        <section class="about section bd-container" id="about">
-            <div class="about__container  bd-grid">
-                <div class="about__data">
-                    <span class="section-subtitle about__initial">Sobre mim</span>
-                    <h2 class="section-title about__initial">Eng. Eletricista | Estudando: Html, JavaScript, Python, SQL e VBA</h2>
-                    <p class="about__description">Desenvolvo diversos tipos de aplica��es, sempre focando em otimizar processos, sem comprometer a qualidade final.</p>
-                    <a href="#" class="button">Ver meu hist�rico</a>
-                </div>
 
-                <img src="cv.png" alt="" class="about__img">
-            </div>
-        </section>
 
         <!--========== SERVICES ==========-->
         <section class="services section bd-container" id="services">
@@ -90,17 +117,17 @@
             <div class="services__container  bd-grid">
                 <div class="services__content">
                     <h3 class="services__title">Metologia �geis</h3>
-                    <p class="services__description">Utilizo o metodologias �geis para desenvolver meus projetos em harmonia, economizar recursos, adquirir agilidade e efici�ncia.</p>
+                    <p class="services__description">Utilizo o metodologias �geis para desenvolver meus projetos em harmonia, economizar recursos, adquirir agilidade e efici?ncia.</p>
                 </div>
 
                 <div class="services__content">
                     <h3 class="services__title">Soft Skills</h3>
-                    <p class="services__description">Estou sempre desenvolvendo minhas habilidades e compet�ncias relacionadas ao comportamento humano para tornar o ambiente de trabalho um local agrad�vel.</p>
+                    <p class="services__description">Estou sempre desenvolvendo minhas habilidades e compet�ncias relacionadas ao comportamento humano para tornar o ambiente de trabalho um local agrad?vel.</p>
                 </div>
 
                 <div class="services__content">
                     <h3 class="services__title">L�nguas</h3>
-                    <p class="services__description">Participo de um curso de ingl�s, onde vou conquistar a flu�ncia e profici�ncia em janeiro de 2022. L�ngua materna: Portugu�s.</p>
+                    <p class="services__description">Participo de um curso de ingl�s, onde vou conquistar a flu�ncia e profici�ncia em janeiro de 2022. L?ngua materna: Portugu?s.</p>
                 </div>
             </div>
         </section>
@@ -111,22 +138,23 @@
             <h2 class="section-title">Projetos</h2>
 
             <div class="menu__container bd-grid">
+                <div id="Js"></div>
                 <div class="menu__content">
                     <h2>Html/JavaScript</h2>
-                    <a href="https://github.com/FernandaMakiHirose/netflix" class="menu__name" target="_blank">- Recriando o layout da Netflix</a><br>
+                    <a href="https://github.com/FernandaMakiHirose/netflix" class="Js" target="_blank">- Download do codigo</a><br>
                     <p>descri��o 1<br>
 
                         <title>Inserindo v�deos do YouTube em uma p�gina HTML</title>
                         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Tp9cA3Mnvuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <h2>Python</h2>
+                        <h2 id="Python">Python</h2>
                         <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
                         <p>descri��o 2<br><br><br>
-                            <h2>VBA</h2>
+                            <h2 id="VBA">VBA</h2>
                             <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
                             <p>descri��o 2<br><br><br>
-                                <h2>SQL</h2>
+                                <h2 id="SQL">SQL</h2>
                                 <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
                                 <p>descri��o 2<br><br><br>
 
