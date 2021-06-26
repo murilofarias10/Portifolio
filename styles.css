@@ -1,249 +1,224 @@
-﻿                                                /*===== GOOGLE FONTS =====*/
+﻿ /*===== GOOGLE FONTS =====*/
                                     
-                                    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-                                     :root {
-                                        --header-height: 3rem;
-                                        /*========== Cores ==========*/
-                                        --first-color: #0b81ea;
-                                        --first-color-alt: #048654;
-                                        --botao-color: #000000;
-                                        --title-color: #ffffff;
-                                        --text-color: #000000;
-                                        --text-color-light: #A6A6A6;
-                                        /*--body-color: #FBFEFD;*/
-                                        /*	--body-color: #696969; */
-                                        --container-color: #000000;
-                                        /*========== Fonte e Tipografia ==========*/
-                                        --body-font: 'Poppins', sans-serif;
-                                        --biggest-font-size: 2.25rem;
-                                        --h1-font-size: 1.5rem;
-                                        --h2-font-size: 1.25rem;
-                                        --h3-font-size: 1rem;
-                                        --normal-font-size: .938rem;
-                                        --small-font-size: .813rem;
-                                        --smaller-font-size: .75rem;
-                                        @media screen and (min-width: 768px) {
-                                            --biggest-font-size: 4rem;
-                                            --h1-font-size: 2.25rem;
-                                            --h2-font-size: 1.5rem;
-                                            --h3-font-size: 1.25rem;
-                                            --normal-font-size: 1rem;
-                                            --small-font-size: .875rem;
-                                            --smaller-font-size: .813rem;
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+ :root {
+--header-height: 3rem;
+/*========== Cores ==========*/
+--first-color: #0b81ea;
+--first-color-alt: #006400;
+  --botao-color: #000000;
+ --title-color: #ffffff;
+ --text-color: #000000;
+ --text-color-light: #A6A6A6;
+ --container-color: #000000;
+--cinza-escuro: #363636;
+--azul-escuro: #000080;
+/*========== Fonte e Tipografia ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+   --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+   --small-font-size: .813rem;
+ --smaller-font-size: .75rem;
+  @media screen and (min-width: 768px) {
+--biggest-font-size: 4rem;
+ --h1-font-size: 2.25rem;
+ --h2-font-size: 1.5rem;
+   --h3-font-size: 1.25rem;
+   --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .813rem;
                                         }
-                                        /*========== Peso da fonte ==========*/
-                                        --font-medium: 500;
-                                        --font-semi-bold: 600;
-                                        /*========== Margens ==========*/
-                                        --mb-1: 1.5rem;
-                                        --mb-2: 1rem;
-                                        --mb-3: 1.5rem;
-                                        --mb-4: 1rem;
-                                        --mb-5: 1.5rem;
-                                        --mb-6: 1rem;
-                                        /*========== z index ==========*/
-                                        --z-tooltip: 100;
-                                        --z-fixed: 100;
+   /*========== Peso da fonte ==========*/
+
+ --font-medium: 500;
+ --font-semi-bold: 600;
+  /*========== Margens ==========*/
+  --mb-1: 1.5rem;
+   --mb-2: 1rem;
+   --mb-3: 1.5rem;
+     --mb-4: 1rem;
+    --mb-5: 1.5rem;
+  --mb-6: 1rem;
+    /*========== z index ==========*/
+   --z-tooltip: 100;
+    --z-fixed: 100;
                                     }
-                                    /*========== BASE ==========*/
+     /*========== BASE ==========*/
                                     
-                                    *,
-                                     ::before,
-                                     ::after {
-                                        box-sizing: border-box;
-                                    }
-                                    
-                                    html {
-                                        scroll-behavior: smooth;
-                                    }
-                                    /*========== Vari�veis Dark theme ==========*/
-                                    
-                                    body.dark-theme {
-                                        --title-color: #F1F3F2;
-                                        --text-color: #C7D1CC;
-                                        --body-color: #1D2521;
-                                        --container-color: #ffffff;
-                                    }
-                                    /*========== Bot�o Dark/Light ==========*/
-                                    
-                                    .change-theme {
-                                        position: absolute;
-                                        right: 1rem;
-                                        top: 1.8rem;
-                                        color: var(--text-color);
-                                        font-size: 1rem;
-                                        cursor: pointer;
+    *,
+     ::before,
+     ::after {
+      box-sizing: border-box;
                                     }
                                     
-                                    body {
-                                        margin: var(--header-height) 0 0 0;
-                                        font-family: var(--body-font);
-                                        font-size: var(--normal-font-size);
-                                        background-color: var(--body-color);
-                                        color: var(--text-color);
-                                        line-height: 1.6;
-                                        background-image: url(backgroundsite.png);
-                                        background-position: center center;
-                                        background-repeat: no-repeat;
-                                        background-attachment: fixed;
-                                        background-size: cover;
+     html {
+    scroll-behavior: smooth;
+                                    }
+   
+                                    /*========== Corpo da pagina ==========*/
+                                    
+                                   
+                                    
+      body {
+      margin: var(--header-height) 0 0 0;
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+      background-color: var(--title-color);
+       color: var(--text-color);
+       line-height: 1.6;
+      background-image: url(backgroundsite.png);
+       background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
                                     }
                                     
-                                    h1,
-                                    h2,
-                                    h3,
-                                    ul,
-                                    p {
-                                        margin: 0;
+      h1,
+      h2,
+       h3,
+       ul,
+       p {
+           margin: 0;
                                     }
                                     
-                                    ul {
-                                        padding: 0;
-                                        list-style: none;
+      ul {
+          padding: 0;
+           list-style: none;
                                     }
                                     
-                                    a {
-                                        text-decoration: none;
-                                    }
+     a {
+          text-decoration: none;
+                         }
                                     
-                                    img {
-                                        max-width: 100%;
-                                        height: auto;
+      img {
+           max-width: 100%;
+                  height: auto;
                                     }
                                     /*========== CLASSE CSS ==========*/
                                     
-                                    .section {
-                                        padding: 4rem 0 2rem;
+     .section {
+          padding: 4rem 0 2rem;
                                     }
                                     
-                                    .section-title {
-                                        text-align: center;
+    .section-title {
+           text-align: center;
                                     }
                                     
-                                    .section-subtitle {
-                                        text-align: center;
+    .section-subtitle {
+            text-align: center;
                                     }
                                     
-                                    .section-title {
-                                        font-size: var(--h1-font-size);
-                                        color: var(--title-color);
-                                        margin-bottom: var(--mb-3);
+    .section-title {
+             font-size: var(--h1-font-size);
+               color: var(--cinza-escuro);
+              margin-bottom: var(--mb-3);
                                     }
+     .section-title:hover{color: var(--botao-color);}
                                     
-                                    .section-subtitle {
-                                        display: block;
-                                        color: var(--first-color);
-                                        font-weight: var(--font-medium);
-                                        margin-bottom: var(--mb-1)
+     .section-subtitle {
+       display: block;
+       color: var(--first-color);
+       font-weight: var(--font-medium);
+        margin-bottom: var(--mb-1)
                                     }
                                     /*========== LAYOUT ==========*/
                                     
-                                    .bd-container {
-                                        max-width: 968px;
-                                        width: calc(100% - 2rem);
-                                        margin-left: var(--mb-2);
-                                        margin-right: var(--mb-2);
+      .bd-container {
+         max-width: 968px;
+         width: calc(100% - 2rem);
+        margin-left: .1rem;
+        margin-right: .1rem;
                                     }
                                     
-                                    .bd-grid {
-                                        display: grid;
-                                        gap: 1.5rem;
+     .bd-grid {
+        display: grid;
+         gap: 1rem;
                                     }
                                     
-                                    .l-header {
-                                        width: 100%;
-                                        position: fixed;
-                                        top: 0;
-                                        left: 0;
-                                        z-index: var(--z-fixed);
-                                        background-color: var(--title-color);
+      .l-header {
+           width: 100%;
+            position: fixed;
+            top: 0;
+             left: 0;
+            z-index: var(--z-fixed);
+          background-color: var(--title-color);
                                     }
                                     /*========== NAV ==========*/
                                     
-                                    .nav {
-                                        max-width: 1024px;
-                                        height: var(--header-height);
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
+        .nav {
+            max-width: 1024px;
+              height: var(--header-height);
+              display: flex;
+             justify-content: space-between;
+             align-items: center;
                                     }
                                     
-                                    .nav__menu {
-                                        @media screen and (max-width: 768px) {
-                                            position: fixed;
-                                            top: -100%;
-                                            left: 0;
-                                            width: 100%;
-                                            padding: 1.5rem 0 1rem;
-                                            text-align: center;
-                                            background-color: var(--body-color);
-                                            transition: .4s;
-                                            box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
-                                            border-radius: 0 0 1rem 1rem;
-                                            z-index: var(--z-fixed);
-                                        }
-                                        /*
-        .nav__logo {
-                        color: var(--text-color);
-             font-weight: var(--font-medium);
-                }*/
-                                        /*
-      .nav__toggle {
-       color: var(--text-color);
-         font-weight: var(--font-medium);
-        }*/
-                                        /*
-        .nav__logo:hover {
-           color: var(--first-color);
-        }*/
-                                        /*  .nav__link {
-            transition: .3s;
-       }*/
-                                    }
-                                    /*
-          .nav__toggle {
-          font-size: 1.3rem;
-                cursor: pointer;
-                  }*/
+         .nav__menu {
+            @media screen and (max-width: 768px) {
+            position: fixed;
+             top: -100%;
+           left: 0;
+            width: 100%;
+            padding: 1.5rem 0 1rem;
+             text-align: center;
+           background-color: var(--title-color);
+           transition: .4s;
+                        border-radius: 2%;
+           z-index: var(--z-fixed);
+                                                }                                    
+                      }
+                                    
                                     /* Show menu */
                                     
-                                    .show-menu {
-                                        top: var(--header-height);
+        .show-menu {
+           top: var(--header-height);
                                     }
                                     /* Active menu */
                                     
-                                    .active-link {
-                                        color: var(--first-color);
+      .active-link {
+               color: var(--first-color);
                                     }
                                     /* Muda o background header */
                                     
-                                    .scroll-header {
-                                        box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+          .scroll-header {
+          box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
                                     }
                                     /* Scroll top */
-                                    
-                                    .scrolltop {
-                                        position: fixed;
-                                        right: 1rem;
-                                        bottom: -20%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        padding: .3rem;
-                                        background: rgba(6, 156, 84, .5);
-                                        border-radius: .4rem;
-                                        z-index: var(--z-tooltip);
-                                        transition: .4s;
-                                        visibility: hidden;
+
+    #scrolltop:hover{
+
+                     color: #02f2f2; /*azul agua*/
+}
+
+          .scrolltop {
+            position: fixed;
+              right: 1rem;
+            bottom: -20%;
+                display: flex;
+                justify-content: center;
+               align-items: center;
+               padding: .3rem;
+           background-color: var(--botao-color);
+          border-radius: .4rem;
+               z-index: var(--z-tooltip);
+             transition: .2s;
+            
+    
                                     }
                                     
-                                    .scrolltop:hover {
-                                        background-color: var(--first-color-alt);
-                                    }
+             .scrolltop:hover {
+                        background-color: #006400;
+                        
+                                                            }
+
+
                                     
-                                    .scrolltop__icon {
+            .scrolltop__icon {
                                         font-size: 1.8rem;
-                                        color: var(--body-color);
+                                        color: #FFFFFF;
                                     }
                                     
                                     .show-scroll {
@@ -259,7 +234,7 @@
                                     }
                                     
                                     .home__title:hover {
-                                        color: #0b81ea;
+                                        color: var(--azul-escuro);
                                     }
                                     
                                     .home__container {
@@ -275,7 +250,7 @@
                                     }
                                     
                                     .home__subtitle:hover {
-                                        color: #0b81ea;
+                                        color: var(--azul-escuro);
                                     }
                                     
                                     .home__img {
@@ -288,15 +263,15 @@
                                     
                                     .button {
                                         display: inline-block;
-                                        background-color: var(--botao-color);
-                                        color: #FFF;
+                                        background-color: var(--botao-color); /*preto*/
+                                        color: #FFFFFF; /*branco*/
                                         padding: .75rem 1rem;
                                         border-radius: .5rem;
                                         transition: .3s;
                                     }
                                     
                                     .button:hover {
-                                        background-color: var(--first-color-alt);
+                                        background-color: var(--first-color-alt); /*verde escuro*/
                                     }
                                     /*========== ABOUT ==========*/
                                     
@@ -316,7 +291,7 @@
                                     /*========== SERVICES ==========*/
                                     
                                     .services__container {
-                                        row-gap: 2.5rem;
+                                        row-gap: .5rem;
                                         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                                     }
                                     
@@ -333,13 +308,21 @@
                                     
                                     .services__title {
                                         font-size: var(--h3-font-size);
-                                        color: var(--title-color);
+                                        color: var(--cinza-escuro);
                                         margin-bottom: var(--mb-1);
-                                    }
                                     
-                                    .services__description {
-                                        padding: 0 1.5rem;
                                     }
+
+                                    .services__title:hover{color: var(--botao-color)}
+
+                                    .services__description {
+                                        text-align="left";
+                                        
+                                         
+                                    }
+
+                            .services__description:hover{color: var(--azul-escuro);
+}
                                     /*========== MENU ==========*/
                                     
                                     .menu__container {
@@ -352,15 +335,10 @@
                                         position: relative;
                                         display: flex;
                                         flex-wrap: wrap;
-                                        /*flex-direction: row; */
-                                        /* column; */
-                                        /* deixando transparente background-color: var(--title-color);
-                              */
                                         border-radius: 50px;
                                         box-shadow: 50px 50px 50px 50px rgba(3, 74, 40, 0.15);
-                                        padding: 40rem;
-                                        width: 600px;
-                                        height: 700px;
+                                        width: 480px; /*tamanho da sombra no container*/
+                                        height: 700px; /*tamanho da sombra no container*/
                                     }
                                     
                                     .menu__img {
@@ -435,7 +413,9 @@
                                     
                                     .contact__description {
                                         margin-bottom: var(--mb-3);
+
                                     }
+                                    .contact__description:hover{color: var(--azul-escuro)}
                                     /*========== FOOTER ==========*/
                                     
                                     .footer__container {
@@ -445,9 +425,10 @@
                                     
                                     .footer__logo {
                                         font-size: var(--h3-font-size);
-                                        color: var(--first-color);
+                                        color: var(--cinza-escuro);
                                         font-weight: var(--font-semi-bold);
                                     }
+                            .footer__logo:hover{ color: #000000}
                                     
                                     .footer__description {
                                         display: block;
@@ -457,30 +438,34 @@
                                     
                                     .footer__social {
                                         font-size: 1.5rem;
-                                        color: var(--title-color);
+                                        color: #000000;
                                         margin-right: var(--mb-2);
                                     }
+
+                    .footer__social:hover {
+                                        color: var(--first-color-alt); /*verde escuro*/}
                                     
                                     .footer__title {
                                         font-size: var(--h2-font-size);
-                                        color: var(--title-color);
+                                        color: var(--cinza-escuro);
                                         margin-bottom: var(--mb-2);
                                     }
+                                    .footer__title:hover{color: #000000;}
                                     
                                     .footer__link {
                                         display: inline-block;
-                                        color: var(--title-color);
+                                        color: var(--text-color);
                                         margin-bottom: var(--mb-1);
                                     }
                                     
                                     .footer__link:hover {
-                                        color: var(--first-color);
+                                        color: var(--azul-escuro);
                                     }
                                     
                                     .footer__copy {
                                         text-align: center;
-                                        font-size: var(--small-font-size);
-                                        color: var(--text-color-light);
+                                        font-size: 1rem;
+                                        color: #000000;
                                         margin-top: 3.5rem;
                                     }
                                     /*========== MEDIA QUERIES ==========*/
@@ -680,12 +665,13 @@
                                                 margin-left: 5px;
                                             }
                                             #menu li a:hover {
-                                                color: #0b81ea;
+                                                color: var(--azul-escuro);
                                                 background: #F2F2F2;
                                             }
                                             a:hover {
-                                                color: #02f2f2;
+                                                color: #FFFFFF; /*azul agua*/
                                             }
+   
                                             #menu input {
                                                 display: none;
                                                 margin: 0;
