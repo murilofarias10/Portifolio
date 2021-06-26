@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,7 +42,7 @@
              <p class='bx bx-moon change-theme' id="theme-button"> alterar o tema</p> -->
 
 
-    <!-- novo menu -->
+    <!-- novo menu
     <nav class="nav">
         <ul class="nav__menu">
             <li class="nav__menu-item">
@@ -75,7 +75,26 @@
                 </a>
 
     </nav>
-    <!-- fechando novo menu -->
+
+   fechando novo menu antigo-->
+
+    <nav id="menu">
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Experiências</a></li>
+            <li><a class='dropdown-arrow' href="#TituloProjeto">Projetos</a>
+                <ul class='sub-menus'>
+                    <li><a href="#Js">Html / JavaScript</a></li>
+                    <li><a href="#Python">Python</a></li>
+                    <li><a href="#VBA">VBA</a></li>
+                    <li><a href="#SQL">SQL</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contatos</a></li>
+        </ul>
+    </nav>
 
     </header>
 
@@ -85,8 +104,8 @@
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
                     <h1 class="home__title">Olá,</h1>
-                    <h2 class="home__subtitle">Meu nome é Murilo Farias</h2>
-                    <h2 class="home__subtitle">Sou Engenheiro Eletricista e atualmente estou estudando:</h2>
+                    <h4 class="home__subtitle">Meu nome é Murilo Farias</h4>
+                    <h4 class="home__subtitle">Sou Engenheiro Eletricista e atualmente estou estudando:</h4>
                     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" title="Html-Logo">
                     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" title="CSS-Logo">
                     <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" title="Python-Logo">
@@ -95,7 +114,7 @@
                     <img src="https://img.shields.io/badge/VBA-1e6e42?style=for-the-badge&logo=VBA&logoColor=white" title="Vba-Logo"><br><br>
 
 
-                    <h2 class="home__subtitle">Minhas redes sociais:<br></h2>
+                    <h4 class="home__subtitle">Minhas redes sociais:<br></h4>
                     <a href="https://www.linkedin.com/in/murilo-farias-10/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" title="Linkedin-Logo"></a>
                     <a href="https://github.com//murilofarias10/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" title="GitHub-Logo"></a>
                     <a href="https://www.facebook.com/murilo.farias.3/" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" title="Facebook-Logo"></a>
@@ -134,33 +153,49 @@
 
         <!--========== MENU ==========-->
         <section class="menu section bd-container" id="menu">
-            <span class="section-subtitle">Meus Projetos</span>
-            <h2 class="section-title">Projetos</h2>
 
-            <div class="menu__container bd-grid">
-                <div id="Js"></div>
+            <h2 id="TituloProjeto" class="section-title">Projetos</h2>
+
+            <div class="menu__container bd-grid" id="Js">
+
                 <div class="menu__content">
-                    <h2>Html/JavaScript</h2>
-                    <a href="https://github.com/FernandaMakiHirose/netflix" class="Js" target="_blank">- Download do codigo</a><br>
-                    <p>descri��o 1<br>
 
-                        <title>Inserindo v�deos do YouTube em uma p�gina HTML</title>
-                        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tp9cA3Mnvuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2>Html/JavaScript</h2><br><br><br>
+                    <a href="https://github.com/FernandaMakiHirose/netflix" class="Js" target="_blank">
+                        <h6>Download do codigo</h6>
+                    </a><br>
+                    <title>Inserindo v�deos do YouTube em uma p�gina HTML</title>
 
-                        <h2 id="Python">Python</h2>
-                        <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
-                        <p>descri��o 2<br><br><br>
-                            <h2 id="VBA">VBA</h2>
-                            <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
-                            <p>descri��o 2<br><br><br>
-                                <h2 id="SQL">SQL</h2>
-                                <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
-                                <p>descri��o 2<br><br><br>
+                    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+                    <iframe width="580" height="215" src="https://www.youtube.com/embed/Tp9cA3Mnvuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <h6>descrião este video blablabla blablablablablablablablablablablablablablablablablablablablablablablablablablabla blablablablabla blablablablabla blablablablabla</h6>
+
 
                 </div>
 
-            </div>
+                <div class="menu__content"><br>
+                    <h2 id="Python">Python</h2>
+                    <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
+                    <p>descri��o 2<br><br><br>
+
+                </div>
+
+                <div class="menu__content">
+                    <h2 id="VBA">VBA</h2>
+                    <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
+                    <p>descri��o 2<br><br><br>
+                </div>
+
+                <div class="menu__content"><br>
+                    <h2 id="SQL">SQL</h2>
+                    <a href="https://github.com/FernandaMakiHirose/desafios-dio" class="menu__name" target="_blank">- Desafios da DIO</a><br>
+                    <p>descri��o 2<br><br><br>
+
+                </div>
+
+
         </section>
 
         <!--========== CONTACT US ==========-->
