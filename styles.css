@@ -36,11 +36,11 @@
     --font-medium: 500;
     --font-semi-bold: 600;
     /*========== Margens ==========*/
-    --mb-1: 1.5rem;
+    --mb-1: 1rem;
     --mb-2: 1rem;
-    --mb-3: 1.5rem;
+    --mb-3: 1rem;
     --mb-4: 1rem;
-    --mb-5: 1.5rem;
+    --mb-5: 1rem;
     --mb-6: 1rem;
     /*========== z index ==========*/
     --z-tooltip: 100;
@@ -128,9 +128,9 @@
 
     .bd-container {
     max-width: 968px;
-    width: calc(100% - 2rem);
-    margin-left: .1rem;
-    margin-right: .1rem;
+    width: calc(100%);
+ 
+   
     }
 
     .bd-grid {
@@ -238,7 +238,7 @@
     }
 
     .home__container {
-    height: calc(100vh - var(--header-height));
+    height: calc(10vh - var(--header-height));
     align-content: center;
     /*color: var(--title-color: );*/
     }
@@ -253,12 +253,7 @@
     color: var(--azul-escuro);
     }
 
-    .home__img {
-    width: 50px;
-    justify-self: center;
-    border-radius: 80%;
-    border: solid red;
-    }
+   
     /*========== BOT�ES ==========*/
 
     .button {
@@ -294,6 +289,10 @@
     row-gap: .5rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
+ .services__container2 {
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
 
     .services__content {
     text-align: center;
@@ -315,12 +314,20 @@
 
     .services__title:hover{color: var(--botao-color)}
 
-    .services__description {
+    .services__descriptionb {
     text-align="left";
-
-
+    }
+.services__descriptionb {
+    box-shadow: 50px 50px 50px 50px rgba(3, 74, 40, 0.15);
+    }
+    .services__description:hover{color: var(--azul-escuro);
     }
 
+ .services__description {
+    text-align="left";
+    }
+
+    
     .services__description:hover{color: var(--azul-escuro);
     }
     /*========== MENU ==========*/
@@ -468,6 +475,10 @@
     color: #000000;
     margin-top: 3.5rem;
     }
+
+    .qtde:hover{
+    color: var(--azul-escuro);
+}
     /*========== MEDIA QUERIES ==========*/
 
     @media screen and (min-width: 576px) {
@@ -529,11 +540,14 @@
     margin-left: var(--mb-2);
     }
     .home__container {
-    height: 100vh;
+    height: 80vh;
     justify-items: center;
     }
     .services__container {
     margin-top: var(--mb-6);
+    }
+.services__container2 {
+    margin-top: var(--mb-8);
     }
     .menu__container {
     margin-top: var(--mb-6);
@@ -547,7 +561,7 @@
     padding: 1rem;
     }
     .menu__img {
-    width: 10px;
+    width: 1rem;
     }
     .app__store {
     margin: 0 var(--mb-1) 0 0;
@@ -559,9 +573,10 @@
     margin-right: 20px;
     }
     .home__img {
-    width: 300px;
-    border-radius: 80%;
+    width: 250px;
+    border-radius: 20%;
     border: solid #FFFFFF;
+    align: top;
     }
     .about__container {
     column-gap: 7rem;
